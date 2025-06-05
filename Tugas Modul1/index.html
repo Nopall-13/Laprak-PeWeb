@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Mahasiswa Baru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <img src="Stitek.jpg" alt="Logo Kampus" class="logo">
+  <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+  <div class="container">
+    <form id="formulir">
+      
+      <fieldset>
+        <legend>Data Pribadi</legend>
+        
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Contoh: budi@email.com" required>
+
+        <label>Jenis Kelamin *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Pria" required> Pria</label>
+          <label><input type="radio" name="gender" value="Wanita"> Wanita</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobi</legend>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="hobi[]" value="Membaca"> Membaca</label>
+          <label><input type="checkbox" name="hobi[]" value="Olahraga"> Olahraga</label>
+          <label><input type="checkbox" name="hobi[]" value="Musik"> Musik</label>
+          <label><input type="checkbox" name="hobi[]" value="Menulis"> Menulis</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pilihan Jurusan</legend>
+        <label for="jurusan">Pilih Jurusan *</label>
+        <select id="jurusan" name="jurusan" required>
+          <option value="">-- Pilih Jurusan --</option>
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Teknik Electro">Teknik Electro</option>
+          <option value="Bisnis Digital">Bisnis Digital</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Alamat Lengkap</legend>
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" placeholder="Contoh: Jl. Patimura No.1, Bontang"></textarea>
+      </fieldset>
+
+      <button type="submit">Kirim Formulir</button>
+    </form>
+  </div>
+
+  <div class="footer-link">
+    <a href="https://stitek.ac.id/" target="_blank">Informasi Selengkapnya Tentang Kampus</a>
+  </div>
+
+</body>
+</html>

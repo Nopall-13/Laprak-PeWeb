@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum CSS</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box; 
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 20px;
+            margin: 0 auto 30px auto;
+            max-width: 800px; 
+            border-radius: 8px; 
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            max-width: 800px;
+            margin: 0 auto; 
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            height: 150px;
+            box-sizing: border-box;
+            border-radius: 10px; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            font-weight: bold; 
+            font-size: 1.2em; 
+        }
+
+        .box1 {
+            background-color: #ff9999;
+        }
+
+        .box2 {
+            background-color: #99ff99;
+        }
+
+        .box3 {
+            background-color: #9999ff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px; 
+            }
+
+            p {
+                padding: 15px; 
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .box {
+                height: 120px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Praktikum CSS</h1>
+    <p>Ini adalah contoh paragraf di bawah judul utama. Paragraf ini memiliki latar belakang abu-abu muda, 
+    teks berwarna hitam, dan padding yang cukup untuk kenyamanan membaca. Sudutnya juga sedikit membulat untuk 
+    estetika yang lebih baik.</p>
+
+    <div class="container">
+        <div class="box box1">Kotak 1</div>
+        <div class="box box2">Kotak 2</div>
+        <div class="box box3">Kotak 3</div>
+    </div>
+</body>
+</html>

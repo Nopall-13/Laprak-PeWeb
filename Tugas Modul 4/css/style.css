@@ -1,0 +1,10 @@
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#gambar-produk {
+  max-height: 350px;
+  object-fit: contain;
+}
